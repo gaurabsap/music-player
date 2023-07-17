@@ -47,8 +47,8 @@ function App() {
   };
 
   const UpdateRange = () => {
-    let progress = (audio.current.currentTime / audio.current.duration) * 100;
-    setValue(isNaN(progress) ? 0 : progress);
+    let data = (audio.current.currentTime / audio.current.duration) * 100;
+    setValue(isNaN(data) ? 0 : data);
   };
   const HandlePlay = () => {
     setPlay(!play);
