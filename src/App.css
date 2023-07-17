@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.music {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  /* filter: blur(20px); */
+  border-radius: 30px;
+  background-color: white;
+  padding: 20px;
+  background-image: linear-gradient(to top, red, green);
+}
+
+h1 {
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+img {
+  width: 80%;
+  border-radius: 9999999px;
+  object-fit: cover;
+  padding: 20px;
+}
+.img {
+  width: 80%;
+  border-radius: 9999999px;
+  object-fit: cover;
+  animation: anime 0.3s linear infinite;
+}
+
+@keyframes anime {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  /* padding: 10px; */
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+/* input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: beige;
+} */
+
+.play__pause {
+  cursor: pointer;
+}
+
+.play__pause:nth-child(1):hover {
+  background-color: green;
+  border-radius: 9999999px;
+}
+
+.play__pauses:hover {
+  background-color: green;
+  border-radius: 9999999px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .music {
+    width: 80%;
+  }
+}
